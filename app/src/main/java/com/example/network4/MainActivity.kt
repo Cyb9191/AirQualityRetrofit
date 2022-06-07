@@ -1,15 +1,10 @@
 package com.example.network4
 
 import android.os.Bundle
-import android.os.Parcel
-import android.os.Parcelable
 import android.util.Log
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.ContentLoadingProgressBar
 import androidx.lifecycle.lifecycleScope
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import okhttp3.Interceptor
 import retrofit2.Retrofit
@@ -18,24 +13,9 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 import kotlinx.coroutines.launch
 import okhttp3.logging.HttpLoggingInterceptor
-import com.squareup.moshi.Moshi
-import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.converter.moshi.MoshiConverterFactory
-import retrofit2.http.Path
-import androidx.core.content.ContentProviderCompat.requireContext
-import androidx.databinding.DataBindingUtil
-import retrofit2.Response
-//import com.example.network4.MainActivity.RecipesService
-import androidx.navigation.findNavController
-import androidx.lifecycle.lifecycleScope
-import kotlinx.coroutines.launch
 import android.widget.TextView
-
-
-import com.example.network4.*
 import com.example.network4.databinding.ActivityMainBinding
-import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.reflect.jvm.internal.impl.load.kotlin.JvmType
 
